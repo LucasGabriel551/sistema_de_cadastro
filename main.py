@@ -1,6 +1,9 @@
 import os
 
 import cadastro
+import listar
+import atualizar
+
 
 banco_dados = []
 
@@ -20,13 +23,13 @@ def menu():
             print("Cadastro")
             cadastro.cadastro_cliente(banco_dados)
         elif opcao == "2":
-            print(banco_dados)
+            listar.listar_clientes(banco_dados)
         elif opcao == "3":
             print("Atualizar")
+            atualizar.atualizar_cliente(banco_dados)
         elif opcao == "4":
             print("Excluir")
         elif opcao == "5":
-        
             print("Sistema encerrado.")
             break
         else:
