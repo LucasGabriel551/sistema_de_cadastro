@@ -10,6 +10,7 @@ def cadastro_cliente(banco_dados):
         return None
 
     cliente = {
+        "id": len(banco_dados) + 1,
         "nome": nome,
         "idade": idade,
         "telefone": telefone,
